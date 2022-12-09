@@ -1,0 +1,108 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+/* general styles */
+body, html {
+    background-color: #07080d;
+    }
+
+    /* nav styles */
+    .menu {
+        position: sticky;
+        top: 0;
+        background-color: #00000000;
+        padding: 30px;
+    }
+    
+    .nav-link{
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        padding-left: 35px;
+    }
+    .logo{
+        color: white;
+        size: 10px;
+    }
+    
+    .search-icon{
+        color: white;
+        size: 10px;
+    }
+
+    /* landing page styles */
+    #home{
+        margin-top: 10rem;
+    }
+
+    .row {
+       display: flex;
+       padding-left: 10px;
+    }
+
+    .show-name{
+       color: rgb(196, 196, 196);
+       font-family: 'Montserrat', sans-serif;
+       padding-bottom: 10px;
+       padding-left: 20px;
+    }
+
+    .card{
+        padding-right: 40px;
+        width: 500px;
+        height: 300px;
+        border: 10px 10px 10px 10px;
+    }
+
+    #card{
+        padding-right: 40px;
+        width: 400px;
+        height: 200px;
+        border: 10px 10px 10px 10px;
+    }
+
+    .show{
+        /* width: 500px; */
+        height: 300px;
+        object-fit: contain;
+        aspect-ratio: 1;
+        padding: 5px;
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .show:hover{
+        transform: scale(1.1);
+    }
+    .show1{
+        /* width: 533px; */
+        height: 290px;
+        object-fit: contain;
+        aspect-ratio: 1;
+        padding: 5px;
+        border-radius: 10px 10px 10px 10px;
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+    
+    .show1:hover{
+        transform: scale(1.1);
+    }
+
+    .channel{
+        padding: 10px;
+        padding-top: 50px;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    #channel{
+        border: 10px 10px 10px 10px;
+    }
