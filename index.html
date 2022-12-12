@@ -6,33 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-
+    <script src="https://kit.fontawesome.com/ebd22ece2d.js" crossorigin="anonymous"></script>
     <title>Showmax layout</title>
 </head>
 <body>
     <!-- Navbar Section Start -->
-    <nav class="menu">
+    <nav class="menu" id="navbar">
         <div class="row">
             <div class="column">
                 <a class="nav-link active" href="#home">Home</a>
-                <a class="nav-link" href="/series">Series</a>
-                <a class="nav-link" href="/movies">Movies</a>
-                <a class="nav-link" href="/sport">Sport</a>
-                <a class="nav-link" href="/my-lists">My Lists</a>
+                <a class="nav-link" href="/series.html">Series</a>
+                <a class="nav-link" href="/movies.html">Movies</a>
+                <a class="nav-link" href="/sport.html">Sport</a>
+                <a class="nav-link" href="/my-lists.html">My Lists</a>
             </div>
-            <div class="column">
-                <img class="logo" src="" />
+            <div class="column" id="Logo">
+                <i class="fa-solid fa-film"></i> <h1>MovieMin</h1>
             </div>
-            <div class="column">
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i> <h6>search</h6>
-            </div>
+            <div class="row" id="nav-end">
+                <i class="fa-solid fa-magnifying-glass"></i> <h6 class="search">Search</h6>
+                <i class="fa-solid fa-face-smile"></i> <h6 class="account-type">Kids</h6>
+                <div class="circle"><i class="fa-solid fa-a"></i></div>
+                <div class="arrow">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>     
         </div>
     </nav>
+    <button id="toggler" onclick="toggleNav()">Menu</button>
     <!-- Navbar Section End -->
 
     <!-- Home Section Start -->
     <section id="home">
+        <div class="row" style="padding-left: 20px;">
+            <div class="column" id="movie-column">
+                <div class="card" id="movie-card">
+                    <img src="https://i.postimg.cc/Z0tGg0fS/pexels-tima-miroshnichenko-5662857.jpg"  class="movie" alt="Big Brother Naija Lockdown Season 5" />
+                </div>
+            </div>
+            <div class="column" id="movie-column">
+                <div class="card" id="movie-card">
+                    <img src="https://i.postimg.cc/44BwSYSb/pexels-martin-lopez-1117132.jpg" class="movie" alt="Pexels" />
+                </div>
+            </div>
+            <div class="column" id="movie-column">
+                <div class="card" id="movie-card"> 
+                    <img src="https://i.postimg.cc/V6TBBVgS/pexels-kyle-loftus-2510428.jpg" class="movie"  alt="Pexels" /> 
+                </div>
+            </div>
+            <div class="column" id="movie-column">
+                <div class="card" id="movie-card">
+                    <img src="https://i.postimg.cc/XJvQgF0P/pexels-cowomen-2041396.jpg" class="movie" alt="Pexels" />
+                </div>
+            </div>
+            <div class="column" id="movie-column">
+                <div class="card" id="movie-card">
+                    <img src="https://i.postimg.cc/zBcZw84n/pexels-lucas-pezeta-2398354.jpg" class="movie" alt="Pexels" />
+                </div>
+            </div>
+            <div class="column" id="movie-column">
+                <div class="card" id="movie-card">
+                    <img src="https://i.postimg.cc/HkywdzpH/pexels-cottonbro-studio-2925328.jpg" class="movie" alt="Pexels" />
+                </div>
+            </div>
+            <div class="column" id="movie-column">
+                <div class="card" id="movie-card">
+                    <img src="https://i.postimg.cc/Xq6JKfRK/pexels-cottonbro-studio-5082567.jpg" class="movie" alt="Pexels" />
+                </div>
+            </div>
+          </div>
         <h4 class="show-name">Big Brother Naija</h4>
       <div class="row">
         <div class="column">
@@ -56,15 +98,22 @@
             </div>
         </div>
       </div>
+
+      <h4 class="live-channels">Live Channels</h4>
         <div class="row">
-        <div class="column" id="channel">
-            <div class="card">
+            <div class="column">
+            <div class="card" id="channel">
                 <img src="https://i.postimg.cc/1RLLyFMT/Screenshot-2022-12-09-101135.png" class="channel" alt="Newzroom Africa" />
             </div>
         </div>
     <div class="column">
         <div class="card" id="channel">
             <img src="https://i.postimg.cc/8kF284dM/Screenshot-2022-12-09-101204.png" class="channel" alt="euronews" />
+        </div>
+    </div>
+    <div class="column">
+        <div class="card" id="channel">
+            <img src="https://i.postimg.cc/SRCjYtJ7/Screenshot-2022-12-09-101228.png" class="channel" alt="africa news" />
         </div>
     </div>
     <div class="column">
